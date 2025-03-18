@@ -25,9 +25,9 @@ author:
   avatar           : "ProfilePhoto.png"
   name             : "Miguel Bueno"
   pronouns         : # example: "she/her"  
-  bio              : "Data Scientist and Adjunct Assistant Professor of Economics"
+  bio              : "Data Scientist at Google, Adjunct Assistant Professor of Economics"
   location         : "San Francisco, Ca"
-  employer         : "Google / SMCCD"
+  employer         : # Example
   uri              : # URL
   email            : "miguelbueno800@gmail.com" 
 

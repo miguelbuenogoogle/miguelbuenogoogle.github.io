@@ -1,5 +1,5 @@
 ---
-title: "Principles of Microeconomics"
+title: "Principles of Macroeconomics"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1

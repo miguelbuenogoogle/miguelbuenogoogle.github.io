@@ -1,7 +1,7 @@
 ---
 title: "Principles of Microeconomics"
 collection: teaching
-type: "Undergraduate Course"
+type: "Undergraduate course"
 permalink: /teaching/2015-spring-teaching-1
 venue: "Canada College, Business, Design and Workforce"
 date: 2015-01-01

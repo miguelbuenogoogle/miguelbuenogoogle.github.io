@@ -10,11 +10,21 @@ location: "Redwood City, California"
 
 This is a description of a teaching experience. You can use markdown like any other post.
 
-Heading 1
+Lecture Slides and Notes
 ======
-
-Heading 2
-======
-
-Heading 3
-======
+1. Economic Theory
+2. Demand and Consumer Choice
+3. Supply and Producer Choice
+4. Equilibrium
+5. Elasticity
+6. Market Interventions
+7. Welfare and Efficiency
+8. Trade
+9. Externalities
+10. The Labor Market
+11. Inequality, Social Insurance, and Poverty
+12. Market Structure and Power
+13. Entry, Exit, and Long-run Profitability
+14. Game Theory and Strategic Choice
+15. Uncertainty
+16. Imperfect Information

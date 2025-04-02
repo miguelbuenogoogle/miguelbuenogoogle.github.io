@@ -9,7 +9,7 @@ redirect_from:
 
 I'm a Data Scientist at Google and an Adjunct Assistant Professor of Economics in the San Mateo Community College District. 
 
-Based in San Francisco, California, my current work focuses on the [estimation and classification]() of rare events and [ML explainability]() and [fairness]() at YouTube.
+Based in San Francisco, California, my current work focuses on the [estimation and classification of rare events]() and [ML explainability]() and [fairness]() at YouTube.
 
 Previously, I worked on the [estimation and prediction for time-to-event outcomes](). In 2024, I led the development of Google Shopping's time-to-event KPI framework for its 2025 initiatives, facilitating organization-wide tracking and experimentation.
 

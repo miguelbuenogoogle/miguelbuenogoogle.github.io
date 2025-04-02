@@ -13,18 +13,19 @@ This is a description of a teaching experience. You can use markdown like any ot
 Lecture Slides and Notes
 ======
 1. Economic Theory
-2. Demand and Consumer Choice
-3. Supply and Producer Choice
-4. Equilibrium
-5. Elasticity
-6. Market Interventions
-7. Welfare and Efficiency
-8. Trade
-9. Externalities
-10. The Labor Market
-11. Inequality, Social Insurance, and Poverty
-12. Market Structure and Power
-13. Entry, Exit, and Long-run Profitability
-14. Game Theory and Strategic Choice
-15. Uncertainty
-16. Imperfect Information
+2. Rationality
+3. Demand and Consumer Choice
+4. Supply and Producer Choice
+5. Equilibrium
+6. Elasticity
+7. Market Interventions
+8. Welfare and Efficiency
+9. Trade
+10. Externalities
+11. The Labor Market
+12. Inequality, Social Insurance, and Poverty
+13. Market Structure and Power
+14. Entry, Exit, and Long-run Profitability
+15. Game Theory and Strategic Choice
+16. Uncertainty
+17. Imperfect Information

@@ -15,4 +15,4 @@ Previously, I worked on the [estimation and prediction for time-to-event outcome
 
 Prior to Google, I worked as a Quantitative Analyst for Bank of America where I worked on the validation of [consumer and commercial credit risk models]().
 
-I hold a Masters of Science (M.S.) in Applied Economics and Finance from the University of California, Santa Cruz. I also holds a Bachelor's of Arts (B.A.) in Economics and a Bachelor's of Science (B.S.) in Mathematics-Statistics from Fresno State.
+I hold a Masters of Science (M.S.) in Applied Economics and Finance from the University of California, Santa Cruz. I also holds a Bachelor's of Arts (B.A.) in Economics and a Bachelor's of Science (B.S.) in Mathematics-Statistics from the California State University, Fresno.

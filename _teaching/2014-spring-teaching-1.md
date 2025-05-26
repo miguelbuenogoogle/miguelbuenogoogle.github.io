@@ -8,7 +8,7 @@ date: 2025-08-23
 location: "Redwood City, California"
 ---
 
-Designed for undergraduate students in Business Administration and Economics, this algebra-based course introduces students to the fundamental principles of macroeconomic theory and policy. The course begins with foundational concepts such as rationality, demand and supply, and market equilibrium, then builds toward a broader analysis of the economy as a whole. Key topics include gross domestic product (GDP), economic growth, unemployment, inflation, consumption, saving and investment, and the role of the financial sector. Students explore international finance, the business cycle, and the dynamics of fiscal and monetary policy using analytical frameworks such as IS-MP analysis. By the end of the course, students are equipped to critically evaluate macroeconomic trends and policy debates using theoretical and empirical tools.
+Designed for undergraduate students in Business Administration and Economics, this algebra-based course introduces students to the fundamental principles of macroeconomic theory and policy. The course begins with foundational concepts such as rationality, demand and supply, and market equilibrium, then builds toward a broader analysis of the economy as a whole. Key topics include gross domestic product (GDP), economic growth, unemployment, inflation, consumption, saving and investment, and the role of the financial sector. Students explore international finance, the business cycle, and the dynamics of fiscal and monetary policy using analytical frameworks such as IS-MP analysis.
 
 
 Lecture Slides and Notes

@@ -2,7 +2,7 @@
 title: "Principles of Microeconomics"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/principles_of_microeconomics
+permalink: /teaching/1-principles_of_microeconomics
 venue: "Canada College, Business, Design and Workforce"
 date: 2025-01-23
 location: "Redwood City, California"

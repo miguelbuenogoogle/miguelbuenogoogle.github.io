@@ -2,7 +2,7 @@
 title: "Principles of Macroeconomics"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/2-principles_of_macroeconomics
 venue: "Canada College, Business, Design and Workforce Division"
 date: 2025-08-23
 location: "Redwood City, California"

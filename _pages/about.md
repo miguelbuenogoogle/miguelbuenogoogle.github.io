@@ -1,7 +1,8 @@
 ---
 permalink: /
 title: "Miguel Bueno"
-author_profile: true
+layout: home-minimal
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html

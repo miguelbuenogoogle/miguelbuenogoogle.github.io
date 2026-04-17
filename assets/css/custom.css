@@ -394,9 +394,16 @@ pre, code {
    -------------------------------------------------------------------------- */
 
 html[data-theme="dark"] {
-  --global-bg-color:     #111;
-  --global-text-color:   #ddd;
-  --global-border-color: #333;
+  --global-bg-color:                  #111;
+  --global-text-color:                #ddd;
+  --global-text-color-light:          #888;
+  --global-border-color:              #333;
+  --global-code-background-color:     #1e1e1e;
+  --global-link-color:                #ddd;
+  --global-link-color-hover:          #fff;
+  --global-link-color-visited:        #aaa;
+  --global-masthead-link-color:       #ddd;
+  --global-masthead-link-color-hover: #fff;
 }
 
 html[data-theme="dark"] body {

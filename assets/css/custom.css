@@ -1,97 +1,294 @@
 /* ==========================================================================
-   CUSTOM VISUAL OVERRIDES
-   Inspired by jshang21.github.io — elegant typography, refined palette
+   MINIMALIST DESIGN OVERRIDES
+   Inspired by jshang21.github.io — clean, light, typographic
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
    Typography — Playfair Display headings, Inter body
    -------------------------------------------------------------------------- */
 
-body,
-.page__content p,
-.page__content li,
-.sidebar p,
-.sidebar li,
-.author__bio {
+body {
   font-family: 'Inter', -apple-system, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   font-weight: 400;
-  letter-spacing: 0.01em;
+  color: #111;
+  background: #fff;
 }
 
-h1, h2, h3, h4,
-.page__title,
-.author__name,
-.masthead__menu-item--lg a,
-.archive__item-title {
+h1, h2, h3, h4 {
   font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
   letter-spacing: -0.01em;
+  color: #111;
 }
 
 /* --------------------------------------------------------------------------
-   Color palette — deep navy primary (#1a365d) replacing default teal
+   Color variables — clean black-on-white
    -------------------------------------------------------------------------- */
 
 :root {
-  --global-link-color:         #1a365d;
-  --global-link-color-hover:   #2b4c8c;
-  --global-link-color-visited: #334e80;
-  --global-bg-color:           #fdfdfc;
-  --global-border-color:       #e6e6e0;
-  --global-text-color:         #2d2d2d;
-  --global-text-color-light:   #6b6b6b;
-  --global-masthead-link-color:       #1a365d;
-  --global-masthead-link-color-hover: #2b4c8c;
+  --global-link-color:                #111;
+  --global-link-color-hover:          #444;
+  --global-link-color-visited:        #555;
+  --global-bg-color:                  #fff;
+  --global-border-color:              #e8e8e8;
+  --global-code-background-color:     #f6f6f6;
+  --global-text-color:                #111;
+  --global-text-color-light:          #888;
+  --global-masthead-link-color:       #111;
+  --global-masthead-link-color-hover: #555;
 }
 
 a {
-  color: var(--global-link-color);
-  transition: color 0.18s ease;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
 
 a:hover {
-  color: var(--global-link-color-hover);
-  text-decoration: underline;
-}
-
-/* --------------------------------------------------------------------------
-   Masthead / Navigation — refined with navy accent underline
-   -------------------------------------------------------------------------- */
-
-.masthead {
-  background: #fdfdfc;
-  border-bottom: 2px solid #1a365d;
-  box-shadow: 0 1px 6px rgba(26, 54, 93, 0.06);
-}
-
-.masthead__menu-item--lg a {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #1a365d !important;
-  letter-spacing: 0.01em;
-}
-
-.masthead__menu-item a {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.88rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #1a365d;
-  padding: 0.25em 0;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.2s ease, color 0.2s ease;
-}
-
-.masthead__menu-item a:hover {
-  color: #2b4c8c;
-  border-bottom-color: #2b4c8c;
+  color: #444;
+  border-bottom-color: #444;
   text-decoration: none;
 }
 
 /* --------------------------------------------------------------------------
-   Sidebar / Author Profile — clean card feel
+   Masthead — minimal top bar, no heavy borders
+   -------------------------------------------------------------------------- */
+
+.masthead {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: none;
+}
+
+.masthead::after {
+  display: none; /* remove extra pseudo-element border */
+}
+
+.masthead__inner-wrap {
+  padding: 0.75em 1.5em;
+}
+
+.masthead__menu-item--lg a {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111 !important;
+  letter-spacing: 0;
+  border-bottom: none;
+}
+
+.masthead__menu-item a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #555;
+  border-bottom: none;
+  transition: color 0.15s ease;
+}
+
+.masthead__menu-item a:hover {
+  color: #111;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+/* Theme toggle icon */
+#theme-toggle a {
+  border-bottom: none;
+}
+
+/* --------------------------------------------------------------------------
+   Home hero — two-column: content left, photo right
+   -------------------------------------------------------------------------- */
+
+#main-minimal {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 3rem;
+}
+
+.home-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5rem;
+}
+
+.home-hero__content {
+  flex: 1 1 60%;
+}
+
+.home-hero__photo {
+  flex: 0 0 auto;
+  width: 200px;
+}
+
+.home-hero__name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  line-height: 1.15;
+  border-bottom: none;
+}
+
+.home-hero__avatar {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+  border: none;
+  box-shadow: none;
+}
+
+.home-hero__body {
+  font-size: 0.97rem;
+  line-height: 1.85;
+  color: #222;
+}
+
+.home-hero__body p {
+  margin-bottom: 1.1em;
+}
+
+.home-hero__body h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.home-hero__body h2::after {
+  display: none;
+}
+
+.home-hero__body ul {
+  padding-left: 1.2em;
+}
+
+.home-hero__body li {
+  margin-bottom: 0.3em;
+}
+
+.home-hero__body a {
+  color: #111;
+  border-bottom: 1px solid #bbb;
+}
+
+.home-hero__body a:hover {
+  color: #444;
+  border-bottom-color: #444;
+}
+
+/* Responsive: stack on small screens */
+@media screen and (max-width: 640px) {
+  .home-hero {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+
+  .home-hero__photo {
+    width: 120px;
+  }
+
+  .home-hero__name {
+    font-size: 1.9rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Page content (other pages)
+   -------------------------------------------------------------------------- */
+
+.page__content {
+  font-size: 0.97rem;
+  line-height: 1.85;
+  color: #222;
+}
+
+.page__content p {
+  margin-bottom: 1.2em;
+}
+
+.page__content h1,
+.page__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #111;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.75em;
+}
+
+.page__content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 0.2em;
+  margin-top: 2rem;
+}
+
+.page__content h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-top: 1.6em;
+}
+
+.page__content a {
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.page__content a:hover {
+  color: #444;
+  border-bottom-color: #444;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   Archive pages
+   -------------------------------------------------------------------------- */
+
+.archive__item-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.archive__item-title a {
+  color: #111;
+  border-bottom: none;
+}
+
+.archive__item-title a:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+.archive__item-excerpt {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar — minimal on other pages
    -------------------------------------------------------------------------- */
 
 .sidebar {
@@ -102,217 +299,177 @@ a:hover {
   background: transparent;
 }
 
-/* Profile photo — elegant circle with navy ring */
 .author__avatar img {
   border-radius: 50%;
-  border: 3px solid #1a365d;
-  box-shadow: 0 4px 18px rgba(26, 54, 93, 0.18), 0 1px 4px rgba(0, 0, 0, 0.08);
-  will-change: transform;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  border: none;
+  box-shadow: none;
 }
 
-.author__avatar img:hover {
-  box-shadow: 0 8px 28px rgba(26, 54, 93, 0.28);
-  transform: translateY(-2px);
-}
-
-/* Author name — use Playfair, larger */
 .author__name {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: #1a365d;
-  margin-top: 0.75em;
-  margin-bottom: 0.2em;
+  color: #111;
 }
 
-/* Author bio */
 .author__bio {
-  font-size: 0.85rem;
-  color: #4a4a4a;
+  font-size: 0.83rem;
+  color: #555;
   line-height: 1.6;
-  font-style: italic;
 }
 
-/* Location & employer */
 .author__urls li,
 .author__urls a {
   font-family: 'Inter', sans-serif;
   font-size: 0.82rem;
-  color: #3a3a3a;
+  color: #555;
+  border-bottom: none;
 }
 
 .author__urls a:hover {
-  color: #1a365d;
-  text-decoration: none;
+  color: #111;
+  text-decoration: underline;
+  border-bottom: none;
 }
 
-/* Follow button */
 .btn--inverse {
   font-family: 'Inter', sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-weight: 600;
-  border: 1.5px solid #1a365d;
-  color: #1a365d;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  color: #555;
   background: transparent;
-  border-radius: 3px;
-  transition: background 0.2s ease, color 0.2s ease;
+  border-radius: 2px;
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
 
 .btn--inverse:hover {
-  background: #1a365d;
-  color: #fdfdfc;
+  background: transparent;
+  color: #111;
+  border-color: #111;
   text-decoration: none;
 }
 
 /* --------------------------------------------------------------------------
-   Page content — generous spacing, readable line-length
-   -------------------------------------------------------------------------- */
-
-.page__content {
-  font-size: 1rem;
-  line-height: 1.85;
-  color: #2d2d2d;
-}
-
-.page__content p {
-  margin-bottom: 1.4em;
-}
-
-/* Heading hierarchy */
-.page__content h1,
-.page__title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1a365d;
-  border-bottom: 2px solid #1a365d;
-  padding-bottom: 0.3em;
-  margin-bottom: 0.75em;
-}
-
-.page__content h2 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: #1a365d;
-  border-bottom: 1px solid var(--global-border-color);
-  padding-bottom: 0.25em;
-  margin-top: 2.2em;
-}
-
-.page__content h3 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #2d2d2d;
-  margin-top: 1.8em;
-}
-
-/* Inline links in content — subtle underline animation */
-.page__content a {
-  color: #1a365d;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(26, 54, 93, 0.35);
-  transition: border-color 0.18s ease, color 0.18s ease;
-}
-
-.page__content a:hover {
-  color: #2b4c8c;
-  border-bottom-color: #2b4c8c;
-  text-decoration: none;
-}
-
-/* --------------------------------------------------------------------------
-   Biography "About" page — name headline
-   -------------------------------------------------------------------------- */
-
-.page__title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: #1a365d;
-}
-
-/* --------------------------------------------------------------------------
-   Archive pages (Publications, Teaching, Portfolio, etc.)
-   -------------------------------------------------------------------------- */
-
-.archive__item-title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #1a365d;
-}
-
-.archive__item-title a {
-  color: #1a365d;
-  border-bottom: none;
-  text-decoration: none;
-}
-
-.archive__item-title a:hover {
-  color: #2b4c8c;
-  text-decoration: underline;
-}
-
-.archive__item-excerpt {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.88rem;
-  color: #4a4a4a;
-  line-height: 1.7;
-}
-
-/* --------------------------------------------------------------------------
-   Footer — subtle and clean
+   Footer — clean and light
    -------------------------------------------------------------------------- */
 
 .page__footer {
-  background: #1a365d;
-  color: #c8d5e8;
+  background: #fff;
+  border-top: 1px solid #e8e8e8;
+  color: #888;
 }
 
 .page__footer footer {
-  color: #c8d5e8;
+  color: #888;
 }
 
 .page__footer a {
-  color: #a8c0dd;
+  color: #555;
+  border-bottom: none;
 }
 
 .page__footer a:hover {
-  color: #fdfdfc;
-  text-decoration: none;
+  color: #111;
+  text-decoration: underline;
+  border-bottom: none;
 }
 
 /* --------------------------------------------------------------------------
-   CV page — tabular content
+   Tables and code
    -------------------------------------------------------------------------- */
 
 td, th {
   font-family: 'Inter', sans-serif;
 }
 
+pre, code {
+  font-size: 0.87rem;
+}
+
 /* --------------------------------------------------------------------------
-   Dark mode compatibility (keep overrides minimal)
+   Dark mode
    -------------------------------------------------------------------------- */
 
-[data-theme="dark"] .author__name {
-  color: #a8c0dd;
+html[data-theme="dark"] {
+  --global-bg-color:                  #111;
+  --global-text-color:                #ddd;
+  --global-text-color-light:          #888;
+  --global-border-color:              #333;
+  --global-code-background-color:     #1e1e1e;
+  --global-link-color:                #ddd;
+  --global-link-color-hover:          #fff;
+  --global-link-color-visited:        #aaa;
+  --global-masthead-link-color:       #ddd;
+  --global-masthead-link-color-hover: #fff;
 }
 
-[data-theme="dark"] .masthead {
-  border-bottom-color: #2b4c8c;
+html[data-theme="dark"] body {
+  background: #111;
+  color: #ddd;
 }
 
-[data-theme="dark"] .page__content h1,
-[data-theme="dark"] .page__content h2,
-[data-theme="dark"] .page__title {
-  color: #a8c0dd;
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4 {
+  color: #eee;
 }
 
-[data-theme="dark"] .page__footer {
-  background: #0f1e33;
+html[data-theme="dark"] .home-hero__name {
+  color: #eee;
+}
+
+html[data-theme="dark"] .masthead {
+  background: #111;
+  border-bottom-color: #333;
+}
+
+html[data-theme="dark"] .masthead__menu-item--lg a {
+  color: #eee !important;
+}
+
+html[data-theme="dark"] .masthead__menu-item a {
+  color: #aaa;
+}
+
+html[data-theme="dark"] .masthead__menu-item a:hover {
+  color: #eee;
+}
+
+html[data-theme="dark"] a {
+  color: #ddd;
+  border-bottom-color: #555;
+}
+
+html[data-theme="dark"] a:hover {
+  color: #fff;
+  border-bottom-color: #aaa;
+}
+
+html[data-theme="dark"] .home-hero__body a,
+html[data-theme="dark"] .page__content a {
+  color: #ddd;
+  border-bottom-color: #555;
+}
+
+html[data-theme="dark"] .home-hero__body a:hover,
+html[data-theme="dark"] .page__content a:hover {
+  color: #fff;
+  border-bottom-color: #aaa;
+}
+
+html[data-theme="dark"] .page__footer {
+  background: #111;
+  border-top-color: #333;
+}
+
+html[data-theme="dark"] .author__name {
+  color: #eee;
+}
+
+html[data-theme="dark"] .author__bio {
+  color: #aaa;
 }

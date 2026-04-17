@@ -107,6 +107,7 @@ a:hover {
   border-radius: 50%;
   border: 3px solid #1a365d;
   box-shadow: 0 4px 18px rgba(26, 54, 93, 0.18), 0 1px 4px rgba(0, 0, 0, 0.08);
+  will-change: transform;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 

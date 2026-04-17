@@ -15,9 +15,9 @@ Before Google, I was a Quantitative Analyst at Bank of America, where I validate
 
 ## Education
 
-- **M.S.** Applied Economics and Finance — University of California, Santa Cruz  
-- **B.A.** Economics — California State University, Fresno  
-- **B.S.** Mathematics-Statistics — California State University, Fresno  
+- **M.S.** Applied Economics and Finance, University of California, Santa Cruz  
+- **B.A.** Economics, California State University, Fresno  
+- **B.S.** Mathematics-Statistics, California State University, Fresno  
 
 ## Research Interests
 

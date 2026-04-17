@@ -220,6 +220,42 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
+   Content-minimal inner pages (research, teaching, CV)
+   -------------------------------------------------------------------------- */
+
+.content-page {
+  max-width: 760px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.content-page__title {
+  font-family: 'Inter', -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1a2e4a;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  border-bottom: none;
+}
+
+.content-page__body {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #222;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .content-page__title {
+  color: #c8d8f0;
+}
+
+html[data-theme="dark"] .content-page__body {
+  color: #ddd;
+}
+
+/* --------------------------------------------------------------------------
    Page content (other pages)
    -------------------------------------------------------------------------- */
 

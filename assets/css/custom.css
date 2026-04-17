@@ -1,0 +1,317 @@
+/* ==========================================================================
+   CUSTOM VISUAL OVERRIDES
+   Inspired by jshang21.github.io — elegant typography, refined palette
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Typography — Playfair Display headings, Inter body
+   -------------------------------------------------------------------------- */
+
+body,
+.page__content p,
+.page__content li,
+.sidebar p,
+.sidebar li,
+.author__bio {
+  font-family: 'Inter', -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4,
+.page__title,
+.author__name,
+.masthead__menu-item--lg a,
+.archive__item-title {
+  font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
+  letter-spacing: -0.01em;
+}
+
+/* --------------------------------------------------------------------------
+   Color palette — deep navy primary (#1a365d) replacing default teal
+   -------------------------------------------------------------------------- */
+
+:root {
+  --global-link-color:         #1a365d;
+  --global-link-color-hover:   #2b4c8c;
+  --global-link-color-visited: #334e80;
+  --global-bg-color:           #fdfdfc;
+  --global-border-color:       #e6e6e0;
+  --global-text-color:         #2d2d2d;
+  --global-text-color-light:   #6b6b6b;
+  --global-masthead-link-color:       #1a365d;
+  --global-masthead-link-color-hover: #2b4c8c;
+}
+
+a {
+  color: var(--global-link-color);
+  transition: color 0.18s ease;
+}
+
+a:hover {
+  color: var(--global-link-color-hover);
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Masthead / Navigation — refined with navy accent underline
+   -------------------------------------------------------------------------- */
+
+.masthead {
+  background: #fdfdfc;
+  border-bottom: 2px solid #1a365d;
+  box-shadow: 0 1px 6px rgba(26, 54, 93, 0.06);
+}
+
+.masthead__menu-item--lg a {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a365d !important;
+  letter-spacing: 0.01em;
+}
+
+.masthead__menu-item a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1a365d;
+  padding: 0.25em 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.masthead__menu-item a:hover {
+  color: #2b4c8c;
+  border-bottom-color: #2b4c8c;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar / Author Profile — clean card feel
+   -------------------------------------------------------------------------- */
+
+.sidebar {
+  background: transparent;
+}
+
+.sidebar.sticky {
+  background: transparent;
+}
+
+/* Profile photo — elegant circle with navy ring */
+.author__avatar img {
+  border-radius: 50%;
+  border: 3px solid #1a365d;
+  box-shadow: 0 4px 18px rgba(26, 54, 93, 0.18), 0 1px 4px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.author__avatar img:hover {
+  box-shadow: 0 8px 28px rgba(26, 54, 93, 0.28);
+  transform: translateY(-2px);
+}
+
+/* Author name — use Playfair, larger */
+.author__name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-top: 0.75em;
+  margin-bottom: 0.2em;
+}
+
+/* Author bio */
+.author__bio {
+  font-size: 0.85rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Location & employer */
+.author__urls li,
+.author__urls a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: #3a3a3a;
+}
+
+.author__urls a:hover {
+  color: #1a365d;
+  text-decoration: none;
+}
+
+/* Follow button */
+.btn--inverse {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1.5px solid #1a365d;
+  color: #1a365d;
+  background: transparent;
+  border-radius: 3px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn--inverse:hover {
+  background: #1a365d;
+  color: #fdfdfc;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   Page content — generous spacing, readable line-length
+   -------------------------------------------------------------------------- */
+
+.page__content {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #2d2d2d;
+}
+
+.page__content p {
+  margin-bottom: 1.4em;
+}
+
+/* Heading hierarchy */
+.page__content h1,
+.page__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a365d;
+  border-bottom: 2px solid #1a365d;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.75em;
+}
+
+.page__content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #1a365d;
+  border-bottom: 1px solid var(--global-border-color);
+  padding-bottom: 0.25em;
+  margin-top: 2.2em;
+}
+
+.page__content h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-top: 1.8em;
+}
+
+/* Inline links in content — subtle underline animation */
+.page__content a {
+  color: #1a365d;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(26, 54, 93, 0.35);
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+
+.page__content a:hover {
+  color: #2b4c8c;
+  border-bottom-color: #2b4c8c;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   Biography "About" page — name headline
+   -------------------------------------------------------------------------- */
+
+.page__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #1a365d;
+}
+
+/* --------------------------------------------------------------------------
+   Archive pages (Publications, Teaching, Portfolio, etc.)
+   -------------------------------------------------------------------------- */
+
+.archive__item-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a365d;
+}
+
+.archive__item-title a {
+  color: #1a365d;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.archive__item-title a:hover {
+  color: #2b4c8c;
+  text-decoration: underline;
+}
+
+.archive__item-excerpt {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: #4a4a4a;
+  line-height: 1.7;
+}
+
+/* --------------------------------------------------------------------------
+   Footer — subtle and clean
+   -------------------------------------------------------------------------- */
+
+.page__footer {
+  background: #1a365d;
+  color: #c8d5e8;
+}
+
+.page__footer footer {
+  color: #c8d5e8;
+}
+
+.page__footer a {
+  color: #a8c0dd;
+}
+
+.page__footer a:hover {
+  color: #fdfdfc;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   CV page — tabular content
+   -------------------------------------------------------------------------- */
+
+td, th {
+  font-family: 'Inter', sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   Dark mode compatibility (keep overrides minimal)
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] .author__name {
+  color: #a8c0dd;
+}
+
+[data-theme="dark"] .masthead {
+  border-bottom-color: #2b4c8c;
+}
+
+[data-theme="dark"] .page__content h1,
+[data-theme="dark"] .page__content h2,
+[data-theme="dark"] .page__title {
+  color: #a8c0dd;
+}
+
+[data-theme="dark"] .page__footer {
+  background: #0f1e33;
+}

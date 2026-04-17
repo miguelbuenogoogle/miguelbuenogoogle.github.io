@@ -1,18 +1,24 @@
 ---
 permalink: /
-title: "Biography"
+title: "Miguel Bueno"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I'm a Data Scientist at Google and an Adjunct Assistant Professor of Economics in the San Mateo Community College District. 
+Hi, I'm Miguel — a Data Scientist at Google and an Adjunct Assistant Professor of Economics in the San Mateo Community College District, based in San Francisco, California.
 
-Based in San Francisco, California, my current work focuses on the [estimation and classification of rare events]() and [ML explainability]() and [fairness]() at YouTube.
+My research and applied work sits at the intersection of statistics, machine learning, and economics. At YouTube I currently focus on [estimation and classification of rare events](), [ML explainability](), and [algorithmic fairness](). Previously, I led the development of Google Shopping's time-to-event KPI framework — a system that drove organization-wide tracking and experimentation for the 2025 roadmap.
 
-Previously, I worked on the [estimation and prediction for time-to-event outcomes](). In 2024, I led the development of Google Shopping's time-to-event KPI framework for its 2025 initiatives, facilitating organization-wide tracking and experimentation.
+Before Google, I was a Quantitative Analyst at Bank of America, where I validated [consumer and commercial credit risk models]().
 
-Prior to Google, I worked as a Quantitative Analyst for Bank of America where I worked on the validation of [consumer and commercial credit risk models]().
+## Education
 
-I hold a Masters of Science (M.S.) in Applied Economics and Finance from the University of California, Santa Cruz. I also holds a Bachelor's of Arts (B.A.) in Economics and a Bachelor's of Science (B.S.) in Mathematics-Statistics from the California State University, Fresno.
+- **M.S.** Applied Economics and Finance — University of California, Santa Cruz  
+- **B.A.** Economics — California State University, Fresno  
+- **B.S.** Mathematics-Statistics — California State University, Fresno  
+
+## Research Interests
+
+Survival analysis · Rare-event estimation · Causal inference · Algorithmic fairness · ML interpretability

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main-minimal" role="main">
+  <div class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="home-hero__name">{{ page.title }}</h1>
+      <div class="home-hero__body page__content">
+        {{ content }}
+      </div>
+    </div>
+    <div class="home-hero__photo">
+      {% if site.author.avatar contains "://" %}
+        <img src="{{ site.author.avatar }}" alt="{{ site.author.name }}" class="home-hero__avatar">
+      {% else %}
+        <img src="{{ site.author.avatar | prepend: '/images/' | prepend: base_path }}" alt="{{ site.author.name }}" class="home-hero__avatar">
+      {% endif %}
+    </div>
+  </div>
+</div>

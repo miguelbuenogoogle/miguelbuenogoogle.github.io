@@ -6,6 +6,7 @@ permalink: /teaching/2-principles_of_macroeconomics
 venue: "Canada College, Business, Design and Workforce Division"
 date: 2025-01-23
 location: "Redwood City, California"
+author_profile: false
 ---
 
 Designed for undergraduate students in Business Administration and Economics, this algebra-based course introduces students to the fundamental principles of macroeconomic theory and policy. The course begins with foundational concepts such as rationality, demand and supply, and market equilibrium, then builds toward a broader analysis of the economy as a whole. Key topics include gross domestic product (GDP), economic growth, unemployment, inflation, consumption, saving and investment, and the role of the financial sector. Students explore international finance, the business cycle, and the dynamics of fiscal and monetary policy using analytical frameworks such as IS-MP analysis.

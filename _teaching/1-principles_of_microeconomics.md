@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/1-principles_of_microeconomics
 venue: "Canada College, Business, Design and Workforce Division"
-date: 2025-01-23
+date: 2026-01-23
 location: "Redwood City, California"
 author_profile: false
 ---
@@ -14,20 +14,21 @@ Designed for undergraduate students in Business Administration and Economics, th
 Lecture Slides and Notes
 ======
 1. Economic Theory
-2. Rationality
-3. Demand and Consumer Choice
-4. Supply and Producer Choice
-5. Equilibrium
-6. Elasticity
-7. Market Interventions
-8. Welfare and Efficiency
-9. Trade
-10. Externalities
-11. The Labor Market
-12. Inequality, Social Insurance, and Poverty
-13. Market Structure and Power
-14. Entry, Exit, and Long-run Profitability
-15. Game Theory and Strategic Choice
-16. Uncertainty
-17. Imperfect Information
+2. Demand and Consumer Choice
+3. Supply and Producer Choice
+4. Competitive Equilibrium
+5. Elasticity
+6. Government Intervention
+7. Welfare and Efficiency
+8. Monopoly
+9. Price Discrimination
+10. Oligopoly
+11. Firm Entry and Exit
+12. Input Markets
+13. Financial Markets
+14. Trade
+15. Externalities
+16. Inequality, Social Insurance, and Poverty
+17. Uncertainty
+18. Imperfect Information
 
